@@ -3,77 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Portfolio</title>
+    <title>Services | Willison R.</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body style="margin:0; font-family: sans-serif;">
 
-    <header>
+    <header style="padding: 20px; text-align: center; background: white; border-bottom: 1px solid #eee;">
         <nav>
-            <ul style="display: flex; list-style: none; gap: 20px; padding: 20px; justify-content: center;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+            <ul style="display: flex; list-style: none; gap: 30px; justify-content: center; margin: 0; padding: 0;">
+                <li><a href="index.html" style="text-decoration: none; color: #333; font-weight: bold;">Home</a></li>
+                <li><a href="services.html" style="text-decoration: none; color: #007bff; font-weight: bold;">Services</a></li>
+                <li><a href="index.html#portfolio" style="text-decoration: none; color: #333; font-weight: bold;">Portfolio</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Contact Me Sending box -->
-<section id="contact" style="padding: 80px 20px; background-color: #ffffff;">
-    <div style="max-width: 600px; margin: 0 auto; text-align: center; border: 1px solid #eee; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
-        
-        <h2 style="font-size: 2rem; margin-bottom: 10px;">Contact Me</h2>
-        <p style="color: #666; margin-bottom: 30px;">Have a project in mind? Let’s talk about your design or photography needs.</p>
 
-        <form action="https://formspree.io/f/xdadooyq" method="POST" style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
-            
-            <label style="font-weight: bold; font-size: 0.9rem;">Your Name</label>
-            <input type="text" name="name" placeholder="John Doe" required style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem;">
-
-            <label style="font-weight: bold; font-size: 0.9rem;">Your Email</label>
-            <input type="email" name="_replyto" placeholder="email@example.com" required style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem;">
-
-            <label style="font-weight: bold; font-size: 0.9rem;">Message</label>
-            <textarea name="message" rows="5" placeholder="Tell me about your project..." required style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
-
-            <button type="submit" style="background-color: #000; color: #fff; padding: 15px; border: none; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 10px;">
-                Send Message
-            </button>
-            
-        </form>
-    </div>
-</section>
-    <!-- Contact me Sending box ends here -->
     <main>
-        <section style="padding: 100px 20px; text-align: center;">
-            <h1 style="font-size: 3rem; margin-bottom: 20px;">My Creative Services</h1>
-            <p style="max-width: 600px; margin: 0 auto 50px; color: #666;">
-                As a Graphic Designer with a passion for Photography and Videography, I provide a full suite of visual storytelling services.
-            </p>
+        <section id="services" style="padding: 80px 20px; background-color: #fcfcfc;">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: #222; margin-bottom: 10px;">Services</h2>
+                <div style="width: 50px; height: 3px; background: #007bff; margin: 0 auto;"></div>
+            </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto;">
-                <div style="padding: 40px; border: 1px solid #ddd; border-radius: 15px;">
-                    <span style="font-size: 50px;">✏️</span>
-                    <h2>Graphic Design</h2>
-                    <p>Branding, logo design, and layouts that communicate your message clearly.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+                
+                <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80" alt="Design" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px; text-align: center;">
+                        <h3 style="margin-bottom: 15px;">Graphic Design</h3>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6;">Professional branding, typography, and visual assets crafted with a designer's eye for detail.</p>
+                    </div>
                 </div>
 
-                <div style="padding: 40px; border: 1px solid #ddd; border-radius: 15px;">
-                    <span style="font-size: 50px;">📷</span>
-                    <h2>Photography</h2>
-                    <p>Professional shoots, event coverage, and high-end image editing.</p>
+                <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
+                    <img src="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?auto=format&fit=crop&w=600&q=80" alt="Photography" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px; text-align: center;">
+                        <h3 style="margin-bottom: 15px;">Photography</h3>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6;">Capturing high-quality imagery that tells a story, from street photography to professional portraits.</p>
+                    </div>
                 </div>
 
-                <div style="padding: 40px; border: 1px solid #ddd; border-radius: 15px;">
-                    <span style="font-size: 50px;">🎥</span>
-                    <h2>Videography</h2>
-                    <p>Engaging video content, cinematic edits, and motion graphics.</p>
+                <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80" alt="Videography" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px; text-align: center;">
+                        <h3 style="margin-bottom: 15px;">Videography</h3>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6;">Professional video editing and shooting that brings motion and emotion to your projects.</p>
+                    </div>
                 </div>
+
+            </div>
+        </section>
+
+        <section id="contact" style="padding: 100px 20px; background-color: #ffffff;">
+            <div style="max-width: 600px; margin: 0 auto; text-align: center; border: 1px solid #eee; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+                <h2 style="font-size: 2rem; margin-bottom: 10px; color: #222;">Let's Work Together</h2>
+                <p style="color: #777; margin-bottom: 30px;">Send me a message about your next creative project.</p>
+
+                <form action="https://formspree.io/f/your-formspree-id" method="POST" style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
+                    <input type="text" name="name" placeholder="Your Name" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                    <input type="email" name="_replyto" placeholder="Your Email Address" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                    <textarea name="message" rows="5" placeholder="Tell me what you are looking for..." required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; resize: none;"></textarea>
+                    <button type="submit" style="background-color: #000; color: #fff; padding: 18px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                        Send Message
+                    </button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer style="text-align: center; padding: 50px; color: #999;">
-        <p>&copy; 2026 Willison Roces</p>
+    <footer style="text-align: center; padding: 40px; color: #aaa; font-size: 12px;">
+        &copy; 2026 Willison R. Portfolio
     </footer>
 
 </body>
