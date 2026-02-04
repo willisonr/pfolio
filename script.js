@@ -1,27 +1,19 @@
 /* ========================================
-   PORTFOLIO SCRIPTS
+   PORTFOLIO SCRIPTS - FULL UPDATE
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  // ========================================
-  // AUTO YEAR UPDATE
-  // Automatically updates the copyright year
-  // ========================================
+  // 1. AUTO YEAR UPDATE
   const yearSpan = document.getElementById('year');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // ========================================
-  // SMOOTH SCROLL
-  // Enables smooth scrolling for anchor links
-  // ========================================
+  // 2. SMOOTH SCROLL
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
-      
-      // Skip if it's just a hash or empty
       if (href === '#' || href === '') return;
       
       const target = document.querySelector(href);
@@ -35,10 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ========================================
-  // SCROLL REVEAL ANIMATION
-  // Fades in elements as they enter viewport
-  // ========================================
+  // 3. SCROLL REVEAL ANIMATION
   const revealElements = document.querySelectorAll('.project-card, .social-item');
   
   const revealObserver = new IntersectionObserver((entries) => {
@@ -54,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
     rootMargin: '0px 0px -50px 0px'
   });
 
-  // Set initial state and observe
   revealElements.forEach((el, index) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -62,60 +50,51 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
-  // ========================================
-  // NAVBAR SCROLL EFFECT
-  // Adds shadow to navbar on scroll
-  // ========================================
+  // 4. NAVBAR SCROLL EFFECT
   const nav = document.querySelector('.nav');
-  let lastScroll = 0;
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 50) {
+        nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+  }
 
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 50) {
-      nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-    } else {
-      nav.style.boxShadow = 'none';
-    }
-    
-    lastScroll = currentScroll;
-  });
-
-  // ========================================
-  // PROJECT CARD HOVER EFFECT
-  // Adds subtle lift effect on hover
-  // ========================================
+  // 5. PROJECT CARD HOVER EFFECT
   const projectCards = document.querySelectorAll('.project-card');
-  
   projectCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
-      card.style.transform = 'translateY(-5px)';
+      card.style.transform = 'translateY(-8px)';
+      card.style.transition = 'transform 0.3s ease';
     });
-    
     card.addEventListener('mouseleave', () => {
       card.style.transform = 'translateY(0)';
     });
   });
 
-  // ========================================
-  // COMING SOON ALERT
-  // Shows alert for projects marked "Coming Soon"
-  // ========================================
-  const comingSoonCards = document.querySelectorAll('.project-card:has(.project-badge)');
-  
-  comingSoonCards.forEach(card => {
-    card.addEventListener('click', (e) => {
-      e.preventDefault();
-      const projectName = card.querySelector('.project-name').textContent;
-      alert(`${projectName} - Coming Soon!`);
-    });
-  });
-
-  // ========================================
-  // CONSOLE GREETING
-  // Friendly message in browser console
-  // ========================================
-  console.log('%c 🎨 Welcome to My Portfolio ', 'background: #C4A77D; color: #1A1A1A; font-size: 16px; font-weight: bold; padding: 10px; border-radius: 4px;');
-  console.log('%c Designed with love by Willison Roces ', 'color: #666; font-size: 12px;');
-
+  console.log('%c 🎨 Portfolio Loaded ', 'background: #111; color: #fff; padding: 5px;');
 });
+
+/* ========================================
+   VIDEO MODAL LOGIC (GLOBAL SCOPE)
+   ======================================== */
+
+// This must stay OUTSIDE the DOMContentLoaded block 
+// so the HTML 'onclick' can find it.
+
+function openVideo(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const player = document.getElementById('modalVideoPlayer');
+    
+    if (modal && player) {
+        player.src = videoSrc;
+        modal.style.display = 'flex';
+        player.play();
+        // Prevent background scrolling
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeVideo()
