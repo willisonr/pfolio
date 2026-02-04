@@ -1,5 +1,5 @@
 /* ========================================
-   PORTFOLIO SCRIPTS - FULL UPDATE
+   PORTFOLIO SCRIPTS - CLEAN VERSION
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,62 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. SCROLL REVEAL ANIMATION
-  const revealElements = document.querySelectorAll('.project-card, .social-item');
-  
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  });
-
-  revealElements.forEach((el, index) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-    revealObserver.observe(el);
-  });
-
-  // 4. NAVBAR SCROLL EFFECT
-  const nav = document.querySelector('.nav');
-  if (nav) {
-    window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 50) {
-        nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-      } else {
-        nav.style.boxShadow = 'none';
-      }
-    });
-  }
-
-  // 5. PROJECT CARD HOVER EFFECT
-  const projectCards = document.querySelectorAll('.project-card');
-  projectCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      card.style.transform = 'translateY(-8px)';
-      card.style.transition = 'transform 0.3s ease';
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = 'translateY(0)';
-    });
-  });
-
-  console.log('%c 🎨 Portfolio Loaded ', 'background: #111; color: #fff; padding: 5px;');
 });
 
 /* ========================================
    VIDEO MODAL LOGIC (GLOBAL SCOPE)
    ======================================== */
-
-// This must stay OUTSIDE the DOMContentLoaded block 
-// so the HTML 'onclick' can find it.
 
 function openVideo(videoSrc) {
     const modal = document.getElementById('videoModal');
@@ -92,9 +41,26 @@ function openVideo(videoSrc) {
         player.src = videoSrc;
         modal.style.display = 'flex';
         player.play();
-        // Prevent background scrolling
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden'; // Stop background scroll
     }
 }
 
-function closeVideo()
+function closeVideo() {
+    const modal = document.getElementById('videoModal');
+    const player = document.getElementById('modalVideoPlayer');
+    
+    if (modal && player) {
+        modal.style.display = 'none';
+        player.pause();
+        player.src = "";
+        document.body.style.overflow = 'auto'; // Enable background scroll
+    }
+}
+
+// Close modal if user clicks the dark background area
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('videoModal');
+    if (event.target === modal) {
+        closeVideo();
+    }
+});
