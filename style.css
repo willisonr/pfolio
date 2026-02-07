@@ -559,3 +559,10 @@ a {
     text-align: center; 
     color: #111;
 }
+.nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
