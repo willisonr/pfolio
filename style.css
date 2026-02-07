@@ -549,20 +549,3 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.gallery-title { 
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 2rem; 
-    font-weight: 700; 
-    letter-spacing: 4px; 
-    text-transform: uppercase; 
-    margin-bottom: 50px; 
-    text-align: center; 
-    color: #111;
-}
-.nav a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
