@@ -549,3 +549,13 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+/* Change the title color to white specifically for the dark section */
+.dark-section .gallery-title { 
+    color: #ffffff; 
+}
+
+/* Ensure the lightbox still looks good (keep it white or make it dark) */
+#lightbox {
+    background: rgba(0, 0, 0, 0.95); /* Switched to black for a cinematic feel */
+}
