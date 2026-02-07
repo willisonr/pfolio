@@ -559,3 +559,9 @@ a {
 #lightbox {
     background: rgba(0, 0, 0, 0.95); /* Switched to black for a cinematic feel */
 }
+.gallery-title { 
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 1.8rem; /* <--- CHANGE THIS FOR GLOBAL CONTROL */
+    margin-bottom: 30px; 
+    text-align: left; 
+}
