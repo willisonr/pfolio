@@ -29,10 +29,24 @@
         
         /* Grid for Static Ads */
         .ads-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 20px; 
-        }
+    display: grid; 
+    /* Force exactly 3 columns on desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1200px; /* Optional: brings them in slightly so they aren't so wide */
+}
+
+/* On Mobile, stack them or show 1-2 columns so they aren't too tiny */
+@media (max-width: 900px) {
+    .ads-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .ads-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
         /* 6 Column Grid for Photography */
         .photo-grid { 
