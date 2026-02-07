@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Willison Roces</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* The "Security Film" layer */
         .protected-image {
             position: relative;
             display: inline-block;
             width: 100%;
-            cursor: zoom-in; /* Shows the user it's clickable */
+            cursor: zoom-in;
         }
         .protected-image::after {
             content: "";
@@ -23,52 +22,31 @@
             background: rgba(0,0,0,0); 
             z-index: 10;
         }
-
-        .gallery-section { padding: 80px 20px; max-width: 1400px; margin: 0 auto; }
-        .gallery-title { font-family: 'Montserrat', serif; font-size: 1.5rem; margin-bottom: 30px; text-align: center; }
-        
-        /* Grid for Static Ads */
         .ads-grid { 
-    display: grid; 
-    /* Force exactly 3 columns on desktop */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-    max-width: 1200px; /* Optional: brings them in slightly so they aren't so wide */
-}
-
-/* On Mobile, stack them or show 1-2 columns so they aren't too tiny */
-@media (max-width: 900px) {
-    .ads-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 600px) {
-    .ads-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-        /* 6 Column Grid for Photography */
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 30px; 
+            max-width: 1200px;
+        }
         .photo-grid { 
             display: grid; 
             grid-template-columns: repeat(6, 1fr); 
             gap: 10px; 
         }
-
-        .photo-grid .protected-image { aspect-ratio: 1 / 1; } /* Makes them squares */
+        .photo-grid .protected-image { aspect-ratio: 1 / 1; }
         .photo-grid img, .ads-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-        /* Lightbox Styles */
         #lightbox {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(255, 255, 255, 0.98); /* Clean white background */
+            background: rgba(0, 0, 0, 0.9); /* Darker for better focus */
             display: none; align-items: center; justify-content: center;
             z-index: 2000; cursor: zoom-out;
         }
-        #lightbox img { max-width: 90%; max-height: 80vh; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        #lightbox img { max-width: 90%; max-height: 80vh; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
 
         @media (max-width: 1024px) { .photo-grid { grid-template-columns: repeat(3, 1fr); } }
-        @media (max-width: 600px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 900px) { .ads-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } .ads-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body oncontextmenu="return false;">
@@ -81,140 +59,51 @@
         </div>
     </nav>
 
- <section style="background: #ffffff; width: 100%; padding: 120px 0 60px 0;">
-    <div style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
-        
-        <h2 style="
-            font-family: 'Roboto', sans-serif; 
-            font-weight: 400; 
-            font-size: 1.8rem; 
-            color: #111111; 
-            text-align: left; 
-            margin-bottom: 30px;
-            letter-spacing: 1px;
-            line-height: 1.2; /* Ensures the height of the letters is fully rendered */
-        ">
-            Static Ads & Key Visuals
-        </h2>
-        
-        <div class="ads-grid">
+    <section style="background: #ffffff; width: 100%; padding: 120px 0 60px 0;">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 1.8rem; color: #111111; text-align: left; margin-bottom: 30px; letter-spacing: 1px; line-height: 1.2;">
+                Static Ads & Key Visuals
+            </h2>
+            <div class="ads-grid">
+                <div class="protected-image" onclick="openLightbox('image/gallery/PNBSG-Ad1.jpg')"><img src="image/gallery/PNBSG-Ad1.jpg" alt="PNB Singapore Ad"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/PNBDigital-Ad1.jpg')"><img src="image/gallery/PNBDigital-Ad1.jpg" alt="PNB Digital Ad"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/PNBeSend-Ad1.jpg')"><img src="image/gallery/PNBeSend-Ad1.jpg" alt="PNB e-Send Ad"></div>
             </div>
-            <div class="protected-image" onclick="openLightbox('image/gallery/PNBSG-Ad1.jpg')"><img src="image/gallery/PNBSG-Ad1.jpg" alt="PNB Singapore Ad"></div>
-            <div class="protected-image" onclick="openLightbox('image/gallery/PNBDigital-Ad1.jpg')"><img src="image/gallery/PNBDigital-Ad1.jpg" alt="PNB Digital Ad"></div>
-            <div class="protected-image" onclick="openLightbox('image/gallery/PNBeSend-Ad1.jpg')"><img src="image/gallery/PNBeSend-Ad1.jpg" alt="PNB e-Send Ad"></div>
         </div>
     </section>
 
-   <section style="background: #000000; width: 100%; padding: 60px 0;">
-    
-    <div style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
-        
-        <h2 style="
-            font-family: 'Roboto', sans-serif; 
-            font-weight: 400; 
-            font-size: 1.8rem; 
-            color: #ffffff; 
-            text-align: left; 
-            margin-bottom: 30px;
-            letter-spacing: 1px;">
-            Photography
-        </h2>
+    <section style="background: #000000; width: 100%; padding: 60px 0;">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 1.8rem; color: #ffffff; text-align: left; margin-bottom: 30px; letter-spacing: 1px;">
+                Photography
+            </h2>
             <div class="photo-grid">
-        
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot47.JPEG')">
-            <img src="image/gallery/shot47.JPEG" alt="Photo 1">
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot47.JPEG')"><img src="image/gallery/shot47.JPEG" alt="Photo 1"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot3.JPG')"><img src="image/gallery/shot3.JPG" alt="Photo 2"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot26.JPG')"><img src="image/gallery/shot26.JPG" alt="Photo 3"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot12.JPG')"><img src="image/gallery/shot12.JPG" alt="Photo 4"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot26.JPG')"><img src="image/gallery/shot26.JPG" alt="Photo 5"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot45.JPG')"><img src="image/gallery/shot45.JPG" alt="Photo 6"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot33.JPG')"><img src="image/gallery/shot33.JPG" alt="Photo 7"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot51.JPG')"><img src="image/gallery/shot51.JPG" alt="Photo 8"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot60.JPG')"><img src="image/gallery/shot60.JPG" alt="Photo 9"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot62.JPG')"><img src="image/gallery/shot62.JPG" alt="Photo 10"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shote44.JPG')"><img src="image/gallery/shote44.JPG" alt="Photo 11"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot7.JPG')"><img src="image/gallery/shot7.JPG" alt="Photo 12"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot4.jpg')"><img src="image/gallery/shot4.jpg" alt="Photo 13"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot8.JPG')"><img src="image/gallery/shot8.JPG" alt="Photo 14"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot15.JPG')"><img src="image/gallery/shot15.JPG" alt="Photo 15"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot54.JPG')"><img src="image/gallery/shot54.JPG" alt="Photo 16"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot59.JPG')"><img src="image/gallery/shot59.JPG" alt="Photo 17"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot26.JPG')"><img src="image/gallery/shot26.JPG" alt="Photo 18"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot16.JPG')"><img src="image/gallery/shot16.JPG" alt="Photo 19"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot23.JPG')"><img src="image/gallery/shot23.JPG" alt="Photo 20"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot25.JPG')"><img src="image/gallery/shot25.JPG" alt="Photo 21"></div>
+                <div class="protected-image" onclick="openLightbox('image/gallery/shot7.JPG')"><img src="image/gallery/shot7.JPG" alt="Photo 22"></div>
+                <div class="protected-image" onclick="openLightbox('image/marduq1.JPG')"><img src="image/marduq1.JPG" alt="Photo 23"></div>
+            </div>
         </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot3.JPG')">
-            <img src="image/gallery/shot3.JPG" alt="Photo 2">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot26.JPG')">
-            <img src="image/gallery/shot26.JPG" alt="Photo 3">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot12.JPG')">
-            <img src="image/gallery/shot12.JPG" alt="Photo 4">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot26.JPG')">
-            <img src="image/gallery/shot26.JPG" alt="Photo 5">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot45.JPG')">
-            <img src="image/gallery/shot45.JPG" alt="Photo 6">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot33.JPG')">
-            <img src="image/gallery/shot33.JPG" alt="Photo 7">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot51.JPG')">
-            <img src="image/gallery/shot51.JPG" alt="Photo 8">
-        </div>
-
-         <div class="protected-image" onclick="openLightbox('image/gallery/shot60.JPG')">
-            <img src="image/gallery/shot60.JPG" alt="Photo 9">
-        </div>
-
-         <div class="protected-image" onclick="openLightbox('image/gallery/shot62.JPG')">
-            <img src="image/gallery/shot62.JPG" alt="Photo 10">
-        </div>
-
-         <div class="protected-image" onclick="openLightbox('image/gallery/shote44.JPG')">
-            <img src="image/gallery/shote44.JPG" alt="Photo 11">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot7.JPG')">
-            <img src="image/gallery/shot7.JPG" alt="Photo 12">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot4.jpg')">
-            <img src="image/gallery/shot4.jpg" alt="Photo 13">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot8.JPG')">
-            <img src="image/gallery/shot8.JPG" alt="Photo 14">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot15.JPG')">
-            <img src="image/gallery/shot15.JPG" alt="Photo 15">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot54.JPG')">
-            <img src="image/gallery/shot54.JPG" alt="Photo 16">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot59.JPG')">
-            <img src="image/gallery/shot59.JPG" alt="Photo 17">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot26.JPG')">
-            <img src="image/gallery/shot26.JPG" alt="Photo 18">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot16.JPG')">
-            <img src="image/gallery/shot16.JPG" alt="Photo 19">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot23.JPG')">
-            <img src="image/gallery/shot23.JPEG" alt="Photo 20">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot25.JPG')">
-            <img src="image/gallery/shot25.JPEG" alt="Photo 21">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/gallery/shot7.JPG')">
-            <img src="image/gallery/shot7.JPG" alt="Photo 22">
-        </div>
-
-        <div class="protected-image" onclick="openLightbox('image/marduq1.JPG')">
-            <img src="image/marduq1.JPG" alt="Photo 23">
-        </div>
-
-        </div>
-</section>
+    </section>
 
     <div id="lightbox" onclick="this.style.display='none'">
         <img id="lightbox-img" src="">
@@ -226,6 +115,5 @@
             document.getElementById('lightbox').style.display = 'flex';
         }
     </script>
-
 </body>
 </html>
