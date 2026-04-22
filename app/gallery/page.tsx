@@ -23,14 +23,14 @@ const IMAGES = {
   // Published Works - Videos/posts with external links
   publishedWorks: [
     {
-      image: "/pfolio/images/qrph-x-pnb.jpg",
-      link: "https://www.facebook.com/watch/?v=278087179945100",
-      title: "Send Cash & Receive",
+      image: "/pfolio/images/gallery/pangarap-home-loan.jpg",
+      link: "https://www.facebook.com/watch/?v=1114580536551121",
+      title: "PNB PaSurprise",
     },
     {
-      image: "/pfolio/images/mardigras.jpg",
-      link: "https://www.facebook.com/watch/?v=587946178810137",
-      title: "PNB PaSurprise",
+      image: "/pfolio/images/gallery/liv-beauty.jpg",
+      link: "https://www.facebook.com/watch/?v=278087179945100",
+      title: "Send Cash & Receive",
     },
     {
       image: "/pfolio/images/videdits1.jpg",
@@ -39,14 +39,13 @@ const IMAGES = {
     },
   ],
   staticAds: [
-    "/pfolio/images/gallery/liv-beauty.jpg",
     "/pfolio/images/gallery/liv-home.jpg",
     "/pfolio/images/gallery/liv-home2.jpg",
     "/pfolio/images/gallery/liv-paper.jpg",
     "/pfolio/images/gallery/liv-med.jpg",
     "/pfolio/images/gallery/liv-vet.jpg",
     "/pfolio/images/gallery/strength-solidarity.jpg",
-    "/pfolio/images/gallery/pangarap-home-loan.jpg",
+    "/pfolio/images/gallery/proj-planet-logo.png",
   ],
 
   // Photography Archive - Square images
@@ -135,25 +134,31 @@ export default function GalleryPage() {
 
               <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 {IMAGES.publishedWorks.map((work, index) => (
-                  <a
-                    key={index}
-                    href={work.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative aspect-[4/3] overflow-hidden rounded border border-zinc-800"
-                  >
-                    <Image
-                      src={work.image}
-                      alt={work.title}
-                      fill
-                      unoptimized
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-background/0 transition-colors group-hover:bg-background/40" />
-                    <div className="absolute bottom-4 right-4 bg-zinc-100/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-black opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      View Post ↗
+                  <div key={index} className="space-y-3">
+                    <a
+                      href={work.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative block aspect-[4/3] overflow-hidden rounded border border-zinc-800"
+                    >
+                      <Image
+                        src={work.image}
+                        alt={work.title}
+                        fill
+                        unoptimized
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <span className="rounded-full bg-white/20 px-4 py-2 text-xs font-medium backdrop-blur-md">
+                          View Post
+                        </span>
+                      </div>
+                    </a>
+                    <div>
+                      <h3 className="text-sm font-semibold text-zinc-100">{work.title}</h3>
+                      <p className="text-[10px] text-zinc-500">Published by Philippine National Bank</p>
                     </div>
-                  </a>
+                  </div>
                 ))}
               </div>
             </section>
