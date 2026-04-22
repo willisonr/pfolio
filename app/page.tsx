@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const MEDIA = {
   background: "/pfolio/image/gallery/shot4.jpg",
-  hero: "/pfolio/image/aylatri1.JPG",
-  portrait: "/pfolio/image/marduq1.JPG",
+  hero: "/pfolio/image/gallery/shot45.JPG",
+  portrait: "/pfolio/image/gallery/shot12.JPG",
   featuredVideo: "/pfolio/videos/60-magnolia.mp4",
   advantageRight: "/pfolio/image/gallery/shot45.JPG",
 };

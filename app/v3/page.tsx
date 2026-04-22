@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const MEDIA = {
-  background: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot4.jpg",
-  hero: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/aylatri1.JPG",
-  portrait: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/marduq1.JPG",
+  background: "/pfolio/image/gallery/shot4.jpg",
+  hero: "/pfolio/image/gallery/shot45.JPG",
+  portrait: "/pfolio/image/gallery/shot12.JPG",
   featuredVideo: "/pfolio/videos/60-magnolia.mp4",
-  advantageRight: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot45.JPG",
+  advantageRight: "/pfolio/image/gallery/shot45.JPG",
 };
 
 const topCards = [

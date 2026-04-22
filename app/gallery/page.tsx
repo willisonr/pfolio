@@ -78,8 +78,6 @@ const IMAGES = {
     "/pfolio/image/gallery/shot59.JPG",
     "/pfolio/image/gallery/shot60.JPG",
     "/pfolio/image/gallery/shot62.JPG",
-    "/pfolio/image/pinats1.JPG",
-    "/pfolio/image/marduq1.JPG",
   ],
 
   videography: [

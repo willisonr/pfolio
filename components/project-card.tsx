@@ -34,6 +34,7 @@ export function ProjectCard({
           src={image}
           alt={title}
           fill
+          unoptimized
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
       )}
