@@ -23,17 +23,17 @@ const IMAGES = {
   // Published Works - Videos/posts with external links
   publishedWorks: [
     {
-      image: "/pfolio/images/gallery/pasurprise.jpg",
+      image: "/pfolio/images/gallery/pasurprise.png",
       link: "https://www.facebook.com/watch/?v=587946178810137",
       title: "PNB PaSurprise",
     },
     {
-      image: "/pfolio/images/gallery/sendcash-receive.jpg",
+      image: "/pfolio/images/gallery/sendcash-receive.png",
       link: "https://www.facebook.com/watch/?v=278087179945100",
       title: "Send Cash & Receive",
     },
     {
-      image: "/pfolio/images/gallery/phishingvid-2.jpg",
+      image: "/pfolio/images/gallery/phishingvid-2.png",
       link: "https://www.facebook.com/watch/?v=521594662444779",
       title: "Phishing Awareness",
     },
