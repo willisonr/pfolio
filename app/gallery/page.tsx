@@ -23,28 +23,30 @@ const IMAGES = {
   // Published Works - Videos/posts with external links
   publishedWorks: [
     {
-      image: "/pfolio/images/gallery/pangarap-home-loan.jpg",
-      link: "https://www.facebook.com/watch/?v=1114580536551121",
+      image: "/pfolio/images/gallery/mardigras.jpg",
+      link: "https://www.facebook.com/reel/587946178810137",
       title: "PNB PaSurprise",
     },
     {
-      image: "/pfolio/images/gallery/liv-beauty.jpg",
-      link: "https://www.facebook.com/watch/?v=278087179945100",
+      image: "/pfolio/images/gallery/qrph-x-pnb.jpg",
+      link: "https://www.facebook.com/reel/278087179945100/",
       title: "Send Cash & Receive",
     },
     {
-      image: "/pfolio/images/videdits1.jpg",
-      link: "https://www.facebook.com/watch/?v=521594662444779",
+      image: "/pfolio/images/gallery/videdits1.jpg",
+      link: "https://www.facebook.com/reel/521594662444779/",
       title: "Phishing Awareness",
     },
   ],
   staticAds: [
+    "/pfolio/images/gallery/liv-beauty.jpg",
     "/pfolio/images/gallery/liv-home.jpg",
     "/pfolio/images/gallery/liv-home2.jpg",
     "/pfolio/images/gallery/liv-paper.jpg",
     "/pfolio/images/gallery/liv-med.jpg",
     "/pfolio/images/gallery/liv-vet.jpg",
     "/pfolio/images/gallery/strength-solidarity.jpg",
+    "/pfolio/images/gallery/pangarap-home-loan.jpg",
     "/pfolio/images/gallery/proj-planet-logo.png",
   ],
 
