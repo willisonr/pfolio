@@ -23,17 +23,17 @@ const IMAGES = {
   // Published Works - Videos/posts with external links
   publishedWorks: [
     {
-      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/sendcash-receive.png",
+      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/qrph-x-pnb.jpg",
       link: "https://www.facebook.com/watch/?v=278087179945100",
       title: "Send Cash & Receive",
     },
     {
-      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/PaSurprise.png",
+      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/mardigras.jpg",
       link: "https://www.facebook.com/watch/?v=587946178810137",
       title: "PNB PaSurprise",
     },
     {
-      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/PhishingVid-2.png",
+      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/videdits1.jpg",
       link: "https://www.facebook.com/watch/?v=521594662444779",
       title: "Phishing Awareness",
     },
@@ -47,6 +47,8 @@ const IMAGES = {
     "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Paper.jpg",
     "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Med.jpg",
     "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Vet.jpg",
+    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/Strength in Solidarity June 2023-107 KV.jpg",
+    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/Pangarap Home Loan - Pull Up Banner 1000mmx2000mm FA.jpg",
   ],
 
   // Photography Archive - Square images
