@@ -23,63 +23,63 @@ const IMAGES = {
   // Published Works - Videos/posts with external links
   publishedWorks: [
     {
-      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/qrph-x-pnb.jpg",
+      image: "/pfolio/image/qrph-x-pnb.jpg",
       link: "https://www.facebook.com/watch/?v=278087179945100",
       title: "Send Cash & Receive",
     },
     {
-      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/mardigras.jpg",
+      image: "/pfolio/image/mardigras.jpg",
       link: "https://www.facebook.com/watch/?v=587946178810137",
       title: "PNB PaSurprise",
     },
     {
-      image: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/videdits1.jpg",
+      image: "/pfolio/image/videdits1.jpg",
       link: "https://www.facebook.com/watch/?v=521594662444779",
       title: "Phishing Awareness",
     },
   ],
   staticAds: [
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/PNBSG-Ad1.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/PNBDigital-Ad1.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Beauty.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Home.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Home2.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Paper.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Med.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/LIV-Vet.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/Strength in Solidarity June 2023-107 KV.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/Pangarap Home Loan - Pull Up Banner 1000mmx2000mm FA.jpg",
+    "/pfolio/image/gallery/PNBSG-Ad1.jpg",
+    "/pfolio/image/gallery/PNBDigital-Ad1.jpg",
+    "/pfolio/image/gallery/LIV-Beauty.jpg",
+    "/pfolio/image/gallery/LIV-Home.jpg",
+    "/pfolio/image/gallery/LIV-Home2.jpg",
+    "/pfolio/image/gallery/LIV-Paper.jpg",
+    "/pfolio/image/gallery/LIV-Med.jpg",
+    "/pfolio/image/gallery/LIV-Vet.jpg",
+    "/pfolio/image/gallery/Strength in Solidarity June 2023-107 KV.jpg",
+    "/pfolio/image/gallery/Pangarap Home Loan - Pull Up Banner 1000mmx2000mm FA.jpg",
   ],
 
   // Photography Archive - Square images
   photography: [
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot4.jpg",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot2.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot3.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot7.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot8.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot9.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot12.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot15.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot16.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot20.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot23.JPEG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot25.JPEG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot26.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot33.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot35.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot38.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot39.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shote44.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot45.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot47.JPEG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot51.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot54.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot59.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot60.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot62.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/pinats1.JPG",
-    "https://raw.githubusercontent.com/willisonr/pfolio/main/image/marduq1.JPG",
+    "/pfolio/image/gallery/shot4.jpg",
+    "/pfolio/image/gallery/shot2.JPG",
+    "/pfolio/image/gallery/shot3.JPG",
+    "/pfolio/image/gallery/shot7.JPG",
+    "/pfolio/image/gallery/shot8.JPG",
+    "/pfolio/image/gallery/shot9.JPG",
+    "/pfolio/image/gallery/shot12.JPG",
+    "/pfolio/image/gallery/shot15.JPG",
+    "/pfolio/image/gallery/shot16.JPG",
+    "/pfolio/image/gallery/shot20.JPG",
+    "/pfolio/image/gallery/shot23.JPEG",
+    "/pfolio/image/gallery/shot25.JPEG",
+    "/pfolio/image/gallery/shot26.JPG",
+    "/pfolio/image/gallery/shot33.JPG",
+    "/pfolio/image/gallery/shot35.JPG",
+    "/pfolio/image/gallery/shot38.JPG",
+    "/pfolio/image/gallery/shot39.JPG",
+    "/pfolio/image/gallery/shote44.JPG",
+    "/pfolio/image/gallery/shot45.JPG",
+    "/pfolio/image/gallery/shot47.JPEG",
+    "/pfolio/image/gallery/shot51.JPG",
+    "/pfolio/image/gallery/shot54.JPG",
+    "/pfolio/image/gallery/shot59.JPG",
+    "/pfolio/image/gallery/shot60.JPG",
+    "/pfolio/image/gallery/shot62.JPG",
+    "/pfolio/image/pinats1.JPG",
+    "/pfolio/image/marduq1.JPG",
   ],
 
   videography: [
@@ -134,6 +134,7 @@ export default function GalleryPage() {
                       src={work.image}
                       alt={work.title}
                       fill
+                      unoptimized
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-background/0 transition-colors group-hover:bg-background/40" />
@@ -158,6 +159,7 @@ export default function GalleryPage() {
                       src={image}
                       alt={`Static Ad ${index + 1}`}
                       fill
+                      unoptimized
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/40">
@@ -203,6 +205,7 @@ export default function GalleryPage() {
                       src={image}
                       alt={`Photo ${index + 1}`}
                       fill
+                      unoptimized
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
@@ -242,6 +245,7 @@ export default function GalleryPage() {
               src={selectedImage}
               alt="Preview"
               fill
+              unoptimized
               className="object-contain"
               priority
             />

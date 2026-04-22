@@ -2,7 +2,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
 import { MapPin } from "lucide-react";
-const HEADER_BG = "https://raw.githubusercontent.com/willisonr/pfolio/main/image/Willison_Roces_Resume02.jpg";
+const HEADER_BG = "/pfolio/image/Willison_Roces_Resume02.jpg";
 
 export default function AboutPage() {
   return (
