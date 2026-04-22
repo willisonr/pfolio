@@ -7,6 +7,8 @@ interface PageHeaderProps {
   showDownload?: boolean;
 }
 
+const basePath = "/pfolio";
+
 export function PageHeader({
   title,
   breadcrumb,
@@ -38,7 +40,7 @@ export function PageHeader({
               <>
                 <span>/</span>
                 <a
-                  href="/Willison_Roces_Resume.pdf"
+                  href={`${basePath}/Willison_Roces_Resume.pdf`}
                   download
                   className="font-semibold text-zinc-100 underline decoration-zinc-500 underline-offset-4 transition-colors hover:text-white hover:decoration-white"
                 >

@@ -5,6 +5,8 @@ import { MapPin } from "lucide-react";
 const HEADER_BG =
   "https://raw.githubusercontent.com/willisonr/pfolio/main/image/Willison_Roces_Resume02.jpg";
 
+const basePath = "/pfolio";
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">

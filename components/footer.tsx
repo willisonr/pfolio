@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Facebook, Twitter, Youtube } from "lucide-react";
 
+const basePath = "/pfolio";
+
 const footerLinks = {
   pages: [
-    { name: "Home", href: "/" },
-    { name: "Resume", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "My Works", href: "/gallery" },
+    { name: "Home", href: `${basePath}/` },
+    { name: "Resume", href: `${basePath}/about` },
+    { name: "Services", href: `${basePath}/services` },
+    { name: "My Works", href: `${basePath}/gallery` },
   ],
   contact: [
     { icon: "location", text: "Based in the Philippines" },

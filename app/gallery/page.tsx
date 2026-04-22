@@ -17,6 +17,8 @@ import { X } from "lucide-react";
    - Photography: 1:1 ratio (square, 400x400)
    ========================================================================== */
 
+const basePath = "/pfolio";
+
 const IMAGES = {
   headerBg: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
 
@@ -82,11 +84,11 @@ const IMAGES = {
 
   videography: [
     {
-      src: "/videos/60-magnolia.mp4",
+      src: `${basePath}/videos/60-magnolia.mp4`,
       title: "60 Magnolia",
     },
     {
-      src: "/videos/cabangan-2026.mp4",
+      src: `${basePath}/videos/cabangan-2026.mp4`,
       title: "Cabangan 2026",
     },
   ],

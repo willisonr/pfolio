@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     "Portfolio of Willison Roces - Motion Graphics, Video Editing, Graphic Design & Photography based in the Philippines.",
 };
 
+const basePath = "/pfolio";
+
 export default function RootLayout({
   children,
 }: {
@@ -25,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} bg-background`}>
+      <head>
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );

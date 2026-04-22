@@ -49,6 +49,8 @@ const services = [
   },
 ];
 
+const basePath = "/pfolio";
+
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">

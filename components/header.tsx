@@ -4,15 +4,17 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 
+const basePath = "/pfolio";
+
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Resume", href: "/about" },
+  { name: "Home", href: `${basePath}/` },
+  { name: "Resume", href: `${basePath}/about` },
   {
     name: "Pages",
     href: "#",
     children: [
-      { name: "My Works", href: "/gallery" },
-      { name: "Services", href: "/services" },
+      { name: "My Works", href: `${basePath}/gallery` },
+      { name: "Services", href: `${basePath}/services` },
     ],
   },
 ];
