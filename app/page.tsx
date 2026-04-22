@@ -5,11 +5,11 @@ import Link from "next/link";
 const basePath = "/pfolio";
 
 const MEDIA = {
-  background: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot4.jpg",
-  hero: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/aylatri1.JPG",
-  portrait: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/marduq1.JPG",
-  featuredVideo: `${basePath}/videos/60-magnolia.mp4`,
-  advantageRight: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot45.JPG",
+  background: "/pfolio/image/gallery/shot4.jpg",
+  hero: "/pfolio/image/aylatri1.JPG",
+  portrait: "/pfolio/image/marduq1.JPG",
+  featuredVideo: "/pfolio/videos/60-magnolia.mp4",
+  advantageRight: "/pfolio/image/gallery/shot45.JPG",
 };
 
 const topCards = [
@@ -69,23 +69,23 @@ export default function HomePage() {
           <header className="flex items-center justify-between border-b border-zinc-800 px-4 py-3">
             <span className="font-serif text-sm tracking-[0.2em] text-zinc-100">WR</span>
             <nav className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-zinc-300">
-                <Link href={`${basePath}/`} className="rounded bg-zinc-800 px-2 py-1 hover:bg-zinc-700">
-                  Home
-                </Link>
-                <Link href={`${basePath}/gallery`} className="rounded bg-zinc-900 px-2 py-1 hover:bg-zinc-800">
-                  My Works
-                </Link>
-                <Link href={`${basePath}/about`} className="rounded bg-zinc-900 px-2 py-1 hover:bg-zinc-800">
-                  Resume
-                </Link>
-                <Link
-                  href="mailto:willisonroces@gmail.com"
-                  className="rounded bg-rose-500 px-2 py-1 font-semibold text-black hover:bg-rose-400"
-                >
-                  Contact
-                </Link>
-              </nav>
-            </header>
+              <Link href="/" className="rounded bg-zinc-800 px-2 py-1 hover:bg-zinc-700">
+                Home
+              </Link>
+              <Link href="/gallery" className="rounded bg-zinc-900 px-2 py-1 hover:bg-zinc-800">
+                My Works
+              </Link>
+              <Link href="/about" className="rounded bg-zinc-900 px-2 py-1 hover:bg-zinc-800">
+                Resume
+              </Link>
+              <Link
+                href="mailto:willisonroces@gmail.com"
+                className="rounded bg-rose-500 px-2 py-1 font-semibold text-black hover:bg-rose-400"
+              >
+                Contact
+              </Link>
+            </nav>
+          </header>
 
             <section className="p-3">
               <div
@@ -159,7 +159,7 @@ export default function HomePage() {
                     View full resume details in the dedicated Resume page.
                   </p>
                   <Link
-                    href={`${basePath}/about`}
+                    href="/about"
                     className="mt-6 inline-block rounded bg-zinc-100 px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text-black transition-colors hover:bg-zinc-300"
                   >
                     View Resume
