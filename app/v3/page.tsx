@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const MEDIA = {
-  background: "/pfolio/image/gallery/shot4.jpg",
-  hero: "/pfolio/image/gallery/shot45.JPG",
-  portrait: "/pfolio/image/gallery/shot12.JPG",
+  background: "/pfolio/images/gallery/shot4.jpg",
+  hero: "/pfolio/images/gallery/shot45.jpg",
+  portrait: "/pfolio/images/gallery/shot12.jpg",
   featuredVideo: "/pfolio/videos/60-magnolia.mp4",
-  advantageRight: "/pfolio/image/gallery/shot45.JPG",
+  advantageRight: "/pfolio/images/gallery/shot45.jpg",
 };
 
 const topCards = [
