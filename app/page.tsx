@@ -1,8 +1,4 @@
-"use client";
-
 import Link from "next/link";
-
-const basePath = "/pfolio";
 
 const MEDIA = {
   background: "https://raw.githubusercontent.com/willisonr/pfolio/main/image/gallery/shot4.jpg",
