@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 interface PageHeaderProps {
   title: string;
@@ -15,6 +18,30 @@ export function PageHeader({
   backgroundImage = "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1920&h=400&fit=crop&q=80",
   showDownload = false,
 }: PageHeaderProps) {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsDownloading(true);
+    
+    try {
+      const response = await fetch(`${basePath}/Willison_Roces_Resume.pdf`);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Willison_Roces_Resume.pdf";
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error("Download failed:", error);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
   return (
     <section className="relative overflow-hidden pt-20">
       <div
@@ -41,10 +68,14 @@ export function PageHeader({
                 <span>/</span>
                 <a
                   href={`${basePath}/Willison_Roces_Resume.pdf`}
-                  download
-                  className="font-semibold text-zinc-100 underline decoration-zinc-500 underline-offset-4 transition-colors hover:text-white hover:decoration-white"
+                  onClick={handleDownload}
+                  className={`font-semibold underline underline-offset-4 transition-colors ${
+                    isDownloading 
+                      ? "text-zinc-500 decoration-zinc-700" 
+                      : "text-zinc-100 decoration-zinc-500 hover:text-white hover:decoration-white"
+                  }`}
                 >
-                  Download PDF
+                  {isDownloading ? "Downloading..." : "Download PDF"}
                 </a>
               </>
             )}
