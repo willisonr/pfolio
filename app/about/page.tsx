@@ -41,14 +41,14 @@ export default function AboutPage() {
               <div className="mt-5 space-y-8 text-zinc-300">
                 <div>
                   <span className="font-semibold text-foreground text-lg">
-                    Branding and Creative
+                    Branding and Creative Lead
                   </span>
                   <br />
                   <span className="text-zinc-400 text-sm italic">Philippine National Bank | Nov 2023 – Present</span>
                   <ul className="mt-2 list-disc pl-5 space-y-1 text-sm">
-                    <li>Leads the Creatives & Branding section of the Marketing Division.</li>
-                    <li>Manages all branding requirements across 600+ branches nationwide.</li>
-                    <li>Oversees marketing materials and creative direction for all business units.</li>
+                    <li>Leads the Creatives & Branding section of the Marketing Division, managing a dedicated team of creative professionals.</li>
+                    <li>Directs and standardizes nationwide visual identity requirements across 600+ branches to ensure 100% brand consistency.</li>
+                    <li>Oversees end-to-end creative direction, brand strategy, and marketing collateral production for all corporate business units.</li>
                   </ul>
                 </div>
 
@@ -59,9 +59,9 @@ export default function AboutPage() {
                   <br />
                   <span className="text-zinc-400 text-sm italic">Philippine National Bank | Sept 2018 – Nov 2023</span>
                   <ul className="mt-2 list-disc pl-5 space-y-1 text-sm">
-                    <li>Directed visual branding audits and handled multi-channel creative campaigns.</li>
-                    <li>Developed social media visuals and motion content in an agile setup.</li>
-                    <li>Created brand collaterals, event designs, and digital content used across bank-wide initiatives.</li>
+                    <li>Directed comprehensive visual branding audits and executed high-impact, multi-channel creative campaigns.</li>
+                    <li>Conceptualized and produced high-engagement social media visuals and motion graphics content within an agile operational setup.</li>
+                    <li>Developed core brand collaterals, experiential event designs, and digital content utilized across major bank-wide marketing initiatives.</li>
                   </ul>
                 </div>
 
@@ -72,8 +72,8 @@ export default function AboutPage() {
                   <br />
                   <span className="text-zinc-400 text-sm italic">Enchanted Kingdom | Oct 2017 – Aug 2018</span>
                   <ul className="mt-2 list-disc pl-5 space-y-1 text-sm">
-                    <li>Designed marketing materials for park promotions and events.</li>
-                    <li>Produced motion graphics and promotional videos using After Effects.</li>
+                    <li>Designed high-visibility marketing materials and visual assets for major park promotions, seasonal campaigns, and live events.</li>
+                    <li>Produced engaging motion graphics and multi-platform promotional videos using Adobe After Effects.</li>
                   </ul>
                 </div>
 
@@ -84,8 +84,8 @@ export default function AboutPage() {
                   <br />
                   <span className="text-zinc-400 text-sm italic">E-way Business Inc. (Livingstone) | Jan 2017 – Sept 2017</span>
                   <ul className="mt-2 list-disc pl-5 space-y-1 text-sm">
-                    <li>Created visual assets and brochures for Australian market clients.</li>
-                    <li>Delivered creative solutions for both digital and print platforms.</li>
+                    <li>Created specialized visual assets, brand brochures, and marketing collateral tailored for corporate clients in the Australian market.</li>
+                    <li>Delivered scalable, high-quality creative solutions optimized for both digital footprints and traditional print platforms.</li>
                   </ul>
                 </div>
 
@@ -96,7 +96,7 @@ export default function AboutPage() {
                   <br />
                   <span className="text-zinc-400 text-sm italic">Project Raw PH | Aug 2016 – Jan 2017</span>
                   <ul className="mt-2 list-disc pl-5 space-y-1 text-sm">
-                    <li>Handled full production pipeline for wedding, event, and corporate videos.</li>
+                    <li>Managed the full post-production and production pipeline for high-end wedding, live event, and corporate promotional videos.</li>
                   </ul>
                 </div>
 
@@ -107,7 +107,7 @@ export default function AboutPage() {
                   <br />
                   <span className="text-zinc-400 text-sm italic">Goodream Printers Inc. | Jan 2016 – May 2016</span>
                   <ul className="mt-2 list-disc pl-5 space-y-1 text-sm">
-                    <li>Produced design and video materials for various event clients</li>
+                    <li>Produced creative layouts, print design materials, and targeted video elements for a diverse portfolio of event clients.</li>
                   </ul>
                 </div>
               </div>
@@ -116,10 +116,10 @@ export default function AboutPage() {
             <section className="rounded-lg border border-zinc-800 bg-zinc-900/70 p-8">
               <h3 className="text-2xl font-bold">Core Skills</h3>
               <ul className="mt-5 space-y-3 text-zinc-300">
-                <li>Adobe Photoshop, Illustrator, InDesign</li>
-                <li>Adobe Premiere Pro, After Effects, Lightroom</li>
-                <li>Branding, Motion Graphics, Video Editing, Photography</li>
-                <li>Traditional Media Sketching and Painting</li>
+                <li><strong>Design & Layout:</strong> Adobe Photoshop, Adobe Illustrator, Adobe InDesign</li>
+                <li><strong>Video & Motion:</strong> Adobe Premiere Pro, Adobe After Effects, DaVinci Resolve Studio</li>
+                <li><strong>Creative Disciplines:</strong> Branding Strategy, Motion Graphics, Video Editing, Photography, Color Grading</li>
+                <li><strong>Traditional Arts:</strong> Fine Art Sketching and Painting</li>
               </ul>
             </section>
 
