@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MEDIA = {
   background: "/pfolio/images/gallery/shot4.jpg",
-  hero: "/pfolio/images/gallery/shot6.jpg",
+  hero: "/pfolio/images/gallery/shot6.JPG",
   portrait: "/pfolio/images/gallery/shot12.jpg",
   featuredVideo: "/pfolio/videos/60-magnolia.mp4",
   advantageRight: "/pfolio/images/gallery/shot45.jpg",
@@ -101,6 +101,33 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
+
+              <section className="mt-3 rounded border border-zinc-800 bg-zinc-900/70 p-4">
+                <p className="text-[10px] uppercase tracking-[0.16em] text-zinc-500">
+                  Recents
+                </p>
+                <h2 className="mt-1 font-serif text-2xl text-zinc-100 mb-3">Latest Uploads</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <article className="overflow-hidden rounded border border-zinc-800 bg-zinc-950/50">
+                    <video
+                      src="/pfolio/videos/Guam-v4_1.mp4"
+                      controls
+                      preload="metadata"
+                      className="aspect-video w-full bg-black"
+                    />
+                    <p className="px-4 py-3 text-sm text-zinc-300">Guam</p>
+                  </article>
+                  <article className="overflow-hidden rounded border border-zinc-800 bg-zinc-950/50">
+                    <video
+                      src="/pfolio/videos/60-magnolia.mp4"
+                      controls
+                      preload="metadata"
+                      className="aspect-video w-full bg-black"
+                    />
+                    <p className="px-4 py-3 text-sm text-zinc-300">60 Magnolia</p>
+                  </article>
+                </div>
+              </section>
 
               <div className="mt-3 grid grid-cols-2 gap-2 md:grid-cols-4">
                 {topCards.map((card) => (

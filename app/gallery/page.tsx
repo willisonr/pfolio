@@ -81,6 +81,10 @@ const IMAGES = {
 
   videography: [
     {
+      src: "/pfolio/videos/Guam-v4_1.mp4",
+      title: "Guam",
+    },
+    {
       src: "/pfolio/videos/60-magnolia.mp4",
       title: "60 Magnolia",
     },
@@ -103,10 +107,6 @@ const IMAGES = {
     {
       src: "/pfolio/videos/worlds-ocean-day.mp4",
       title: "World's Ocean Day",
-    },
-    {
-      src: "/pfolio/videos/Guam-v4_1.mp4",
-      title: "Guam",
     },
   ],
 };
