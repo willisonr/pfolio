@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MEDIA = {
   background: "/pfolio/images/gallery/shot4.jpg",
-  hero: "/pfolio/images/gallery/shot45.jpg",
+  hero: "/pfolio/images/gallery/shot6.jpg",
   portrait: "/pfolio/images/gallery/shot12.jpg",
   featuredVideo: "/pfolio/videos/60-magnolia.mp4",
   advantageRight: "/pfolio/images/gallery/shot45.jpg",
@@ -11,27 +11,27 @@ const MEDIA = {
 const topCards = [
   {
     title: "Branding",
-    text: "Structured campaign visuals for corporate consistency.",
+    text: "Creating visual identities that feel authentic and unforgettable.",
   },
   {
     title: "Motion",
-    text: "Attention-first motion graphics for digital channels.",
+    text: "Bringing stories to life through dynamic, expressive motion.",
   },
   {
-    title: "Editing",
-    text: "Clear, polished storytelling through video post-production.",
+    title: "Video",
+    text: "Capturing moments and crafting narratives with cinematic flair.",
   },
   {
-    title: "Direction",
-    text: "Creative leadership across teams and marketing outputs.",
+    title: "Photography",
+    text: "Freezing time with an artistic eye for composition and light.",
   },
 ];
 
 const stats = [
   { label: "Years", value: "10+" },
-  { label: "Service Scope", value: "Branding • Motion • Video" },
+  { label: "Art Forms", value: "Design • Film • Photo" },
   { label: "Proficient Tools", value: "Ps • Ai • Pr • Ae • Lr" },
-  { label: "Focus", value: "Creatives" },
+  { label: "Focus", value: "Authentic Creativity" },
 ];
 
 const advantages = [
@@ -92,13 +92,12 @@ export default function HomePage() {
                 <div className="relative z-10 max-w-[24rem]">
                   <p className="text-[10px] uppercase tracking-[0.2em] text-zinc-300">Portfolio</p>
                   <h1 className="mt-3 font-serif text-5xl leading-[0.95] text-zinc-100 md:text-6xl">
-                    DESIGN
+                    ART
                     <br />
-                    & FOCUS
+                    & CREATION
                   </h1>
                   <p className="mt-4 max-w-sm text-xs leading-relaxed text-zinc-300">
-                    Visual communication built for corporate clarity across branding,
-                    motion graphics, and video editing.
+                    A multidisciplinary artist exploring visual storytelling through design, video, photography, and motion.
                   </p>
                 </div>
               </div>
@@ -143,13 +142,10 @@ export default function HomePage() {
                     Visual Profile
                   </p>
                   <h2 className="mt-3 font-serif text-3xl leading-tight text-zinc-100">
-                    Built For Brand-Critical Work
+                    Crafting Through Every Medium
                   </h2>
                   <p className="mt-4 text-xs leading-relaxed text-zinc-300">
-                    A multidisciplinary creative with 10+ years of experience in
-                    branding, motion graphics, and video editing. My core work
-                    supports high-volume marketing environments where visual
-                    quality, consistency, and speed are non-negotiable.
+                    A multidisciplinary artist with 10+ years of experience exploring creative expression across design, film, photography, and motion. My work blends technical skill with artistic vision to create something uniquely human.
                   </p>
                   <p className="mt-3 text-xs leading-relaxed text-zinc-300">
                     View full resume details in the dedicated Resume page.
@@ -194,6 +190,15 @@ export default function HomePage() {
                       </p>
                     </article>
                   ))}
+                  <Link
+                    href="/gallery"
+                    className="flex items-center justify-between rounded border border-zinc-800 bg-zinc-900/70 p-3 hover:bg-zinc-800/70 transition-colors"
+                  >
+                    <h3 className="text-[11px] font-semibold uppercase tracking-wide text-zinc-100">
+                      Explore more videos
+                    </h3>
+                    <span className="text-xs text-zinc-400">→</span>
+                  </Link>
                 </div>
               </div>
               <div className="mt-2 grid gap-2 md:grid-cols-[1fr_1.2fr]">
