@@ -104,6 +104,10 @@ const IMAGES = {
       src: "/pfolio/videos/worlds-ocean-day.mp4",
       title: "World's Ocean Day",
     },
+    {
+      src: "/pfolio/videos/Guam-v4_1.mp4",
+      title: "Guam",
+    },
   ],
 };
 
