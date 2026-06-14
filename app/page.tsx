@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Footer } from "@/components/footer";
 
 const MEDIA = {
   background: "/pfolio/images/gallery/shot4.jpg",
@@ -253,6 +254,7 @@ export default function HomePage() {
           </section>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
