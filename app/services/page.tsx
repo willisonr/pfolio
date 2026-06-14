@@ -64,46 +64,46 @@ export default function ServicesPage() {
       />
 
       <section className="pb-24">
-        <div className="mx-auto max-w-4xl px-4">
-          <div className="space-y-12 rounded-lg border border-zinc-800 bg-[#0d0d0d] p-4 md:p-8">
+        <div className="mx-auto max-w-4xl px-4 xl:max-w-6xl 2xl:max-w-7xl">
+          <div className="space-y-12 rounded-lg border border-zinc-800 bg-[#0d0d0d] p-4 md:p-8 xl:p-12">
             <div className="text-center">
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 xl:text-xs">
                 What I Do
               </span>
-              <h2 className="mt-3 font-serif text-3xl font-bold md:text-4xl">My Services</h2>
+              <h2 className="mt-3 font-serif text-3xl font-bold md:text-4xl xl:text-5xl">My Services</h2>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:gap-6">
               {services.map((service) => (
                 <div
                   key={service.title}
-                  className="group relative flex flex-col items-center overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 text-center transition-all duration-300 hover:border-zinc-700 hover:bg-zinc-900/60"
+                  className="group relative flex flex-col items-center overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 text-center transition-all duration-300 hover:border-zinc-700 hover:bg-zinc-900/60 xl:p-8"
                 >
                   <div
-                    className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${service.gradient} backdrop-blur-sm border border-white/5 shadow-xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}
+                    className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${service.gradient} backdrop-blur-sm border border-white/5 shadow-xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 xl:h-20 xl:w-20`}
                   >
-                    <service.icon className={`h-8 w-8 ${service.iconColor}`} />
+                    <service.icon className={`h-8 w-8 ${service.iconColor} xl:h-10 xl:w-10`} />
                   </div>
-                  <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-zinc-100">
+                  <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-zinc-100 xl:text-base">
                     {service.title}
                   </h3>
-                  <p className="text-[11px] leading-relaxed text-zinc-400">
+                  <p className="text-[11px] leading-relaxed text-zinc-400 xl:text-sm">
                     {service.description}
                   </p>
                 </div>
               ))}
             </div>
 
-            <section className="mt-8 border-t border-zinc-800 pt-12">
-              <div className="mx-auto max-w-xl">
-                <div className="mb-10 text-center">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">
+            <section className="mt-8 border-t border-zinc-800 pt-12 xl:pt-16">
+              <div className="mx-auto max-w-xl xl:max-w-2xl">
+                <div className="mb-10 text-center xl:mb-12">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 xl:text-xs">
                     Get In Touch
                   </span>
-                  <h2 className="mt-3 font-serif text-3xl font-bold md:text-4xl">
+                  <h2 className="mt-3 font-serif text-3xl font-bold md:text-4xl xl:text-5xl">
                     Let&apos;s Work Together
                   </h2>
-                  <p className="mt-3 text-sm text-zinc-400">
+                  <p className="mt-3 text-sm text-zinc-400 xl:text-base">
                     Send me a message about your next creative project.
                   </p>
                 </div>
@@ -111,22 +111,22 @@ export default function ServicesPage() {
                 <form
                   action="https://formspree.io/f/your-formspree-id"
                   method="POST"
-                  className="space-y-3"
+                  className="space-y-3 xl:space-y-4"
                 >
-                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:gap-4">
                     <input
                       type="text"
                       name="name"
                       placeholder="Your Name"
                       required
-                      className="w-full rounded border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-xs text-foreground placeholder:text-zinc-600 focus:border-zinc-700 focus:outline-none focus:ring-1 focus:ring-zinc-700"
+                      className="w-full rounded border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-xs text-foreground placeholder:text-zinc-600 focus:border-zinc-700 focus:outline-none focus:ring-1 focus:ring-zinc-700 xl:px-6 xl:py-4 xl:text-sm"
                     />
                     <input
                       type="email"
                       name="_replyto"
                       placeholder="Your Email"
                       required
-                      className="w-full rounded border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-xs text-foreground placeholder:text-zinc-600 focus:border-zinc-700 focus:outline-none focus:ring-1 focus:ring-zinc-700"
+                      className="w-full rounded border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-xs text-foreground placeholder:text-zinc-600 focus:border-zinc-700 focus:outline-none focus:ring-1 focus:ring-zinc-700 xl:px-6 xl:py-4 xl:text-sm"
                     />
                   </div>
                   <textarea
@@ -134,11 +134,11 @@ export default function ServicesPage() {
                     rows={4}
                     placeholder="Tell me what you are looking for..."
                     required
-                    className="w-full resize-none rounded border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-xs text-foreground placeholder:text-zinc-600 focus:border-zinc-700 focus:outline-none focus:ring-1 focus:ring-zinc-700"
+                    className="w-full resize-none rounded border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-xs text-foreground placeholder:text-zinc-600 focus:border-zinc-700 focus:outline-none focus:ring-1 focus:ring-zinc-700 xl:px-6 xl:py-4 xl:text-sm xl:rows-5"
                   />
                   <button
                     type="submit"
-                    className="w-full rounded bg-zinc-100 py-3 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-zinc-300"
+                    className="w-full rounded bg-zinc-100 py-3 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-zinc-300 xl:py-4 xl:text-sm"
                   >
                     Send Message
                   </button>

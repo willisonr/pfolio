@@ -128,19 +128,19 @@ export default function GalleryPage() {
       />
 
       <section className="pb-24">
-        <div className="mx-auto max-w-4xl px-4">
-          <div className="space-y-8 rounded-lg border border-zinc-800 bg-[#0d0d0d] p-4 md:p-6">
+        <div className="mx-auto max-w-4xl px-4 xl:max-w-6xl 2xl:max-w-7xl">
+          <div className="space-y-8 rounded-lg border border-zinc-800 bg-[#0d0d0d] p-4 md:p-6 xl:p-8">
             <section>
-              <div className="mb-12">
-                <h2 className="mb-2 font-serif text-3xl font-bold">Published Works</h2>
-                <p className="text-sm uppercase tracking-wider text-zinc-400">
+              <div className="mb-12 xl:mb-16">
+                <h2 className="mb-2 font-serif text-3xl font-bold xl:text-4xl">Published Works</h2>
+                <p className="text-sm uppercase tracking-wider text-zinc-400 xl:text-base">
                   Click to view live on Facebook
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3 xl:gap-8">
                 {IMAGES.publishedWorks.map((work, index) => (
-                  <div key={index} className="space-y-3">
+                  <div key={index} className="space-y-3 xl:space-y-4">
                     <a
                       href={work.link}
                       target="_blank"
@@ -155,14 +155,14 @@ export default function GalleryPage() {
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <span className="rounded-full bg-white/20 px-4 py-2 text-xs font-medium backdrop-blur-md">
+                        <span className="rounded-full bg-white/20 px-4 py-2 text-xs font-medium backdrop-blur-md xl:px-6 xl:py-3 xl:text-sm">
                           View Post
                         </span>
                       </div>
                     </a>
                     <div>
-                      <h3 className="text-sm font-semibold text-zinc-100">{work.title}</h3>
-                      <p className="text-[10px] text-zinc-500">Published by Philippine National Bank</p>
+                      <h3 className="text-sm font-semibold text-zinc-100 xl:text-base">{work.title}</h3>
+                      <p className="text-[10px] text-zinc-500 xl:text-xs">Published by Philippine National Bank</p>
                     </div>
                   </div>
                 ))}
@@ -170,8 +170,8 @@ export default function GalleryPage() {
             </section>
 
             <section>
-              <h2 className="mb-8 font-serif text-3xl font-bold">Static Ads & Key Visuals</h2>
-              <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+              <h2 className="mb-8 font-serif text-3xl font-bold xl:text-4xl">Static Ads & Key Visuals</h2>
+              <div className="grid grid-cols-2 gap-4 md:grid-cols-4 xl:gap-6">
                 {IMAGES.staticAds.map((image, index) => (
                   <div
                     key={index}
@@ -186,7 +186,7 @@ export default function GalleryPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/40">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-white opacity-0 transition-opacity group-hover:opacity-100">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-white opacity-0 transition-opacity group-hover:opacity-100 xl:text-xs">
                         Preview
                       </span>
                     </div>
@@ -196,8 +196,8 @@ export default function GalleryPage() {
             </section>
 
             <section>
-              <h2 className="mb-8 font-serif text-3xl font-bold">Videography</h2>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <h2 className="mb-8 font-serif text-3xl font-bold xl:text-4xl">Videography</h2>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:gap-6">
                 {IMAGES.videography.map((video) => (
                   <article
                     key={video.title}
@@ -209,15 +209,15 @@ export default function GalleryPage() {
                       preload="metadata"
                       className="aspect-video w-full bg-black"
                     />
-                    <p className="px-4 py-3 text-sm text-zinc-300">{video.title}</p>
+                    <p className="px-4 py-3 text-sm text-zinc-300 xl:px-6 xl:py-4 xl:text-base">{video.title}</p>
                   </article>
                 ))}
               </div>
             </section>
 
             <section>
-              <h2 className="mb-8 font-serif text-3xl font-bold">Photography Archive</h2>
-              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+              <h2 className="mb-8 font-serif text-3xl font-bold xl:text-4xl">Photography Archive</h2>
+              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:gap-3">
                 {IMAGES.photography.map((image, index) => (
                   <div
                     key={index}
@@ -232,7 +232,7 @@ export default function GalleryPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-white opacity-0 transition-opacity group-hover:opacity-100">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-white opacity-0 transition-opacity group-hover:opacity-100 xl:text-xs">
                         Preview
                       </span>
                     </div>
