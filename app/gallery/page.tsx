@@ -23,6 +23,12 @@ const IMAGES = {
   // Published Works - Videos/posts with external links
   publishedWorks: [
     {
+      image: "/pfolio/images/gallery/me-sell-anton---v2.jpg",
+      link: "/pfolio/images/gallery/me-sell-anton---v2.jpg",
+      title: "Anton Magipon Plushie",
+      subtitle: "Original Character Design",
+    },
+    {
       image: "/pfolio/images/gallery/pasurprise.png",
       link: "https://www.facebook.com/watch/?v=587946178810137",
       title: "PNB PaSurprise",
@@ -162,7 +168,7 @@ export default function GalleryPage() {
                     </a>
                     <div>
                       <h3 className="text-sm font-semibold text-zinc-100 xl:text-base">{work.title}</h3>
-                      <p className="text-[10px] text-zinc-500 xl:text-xs">Published by Philippine National Bank</p>
+                      <p className="text-[10px] text-zinc-500 xl:text-xs">{work.subtitle ?? "Published by Philippine National Bank"}</p>
                     </div>
                   </div>
                 ))}
